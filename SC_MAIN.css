@@ -66,7 +66,6 @@ body {
     color: #7b7b82; /* Change color on hover */
 }
 
-
 /* Navigation Styling */
 nav ul {
     list-style: none;
@@ -116,9 +115,8 @@ nav ul li a:hover::after {
     transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
-/* Hover effect for the "Fashion" text */
 .fashion-link:hover {
-    color: #7b7b82; /* Change color on hover (tomato red) */
+    color: #7b7b82; /* Change color on hover */
 }
 
 /* Navigation links */
@@ -138,9 +136,8 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-/* Hover effect for navigation links */
 nav ul li a:hover {
-    color: #7b7b82; /* Tomato red color for hover */
+    color: #7b7b82; /* Hover color */
 }
 
 /* Home Section Styling */
@@ -220,6 +217,7 @@ nav ul li a:hover {
     font-size: 16px;
     color: #333;
 }
+
 /* Footer Styling */
 footer {
     background-color: #000000;
@@ -247,29 +245,29 @@ footer {
     font-size: 1rem;
     margin: 10px 0; /* Margin around the description */
     font-weight: 300; /* Lighter weight for description */
-    letter-spacing: 1px; /* Optional: slight spacing between letters */
+    letter-spacing: 1px;
 }
 
 /* Line Styling for Separator (Centering the line) */
 .footer-line {
     width: 80%; /* Adjust the width of the line as needed */
     border: 0;
-    border-top: 1px solid white; /* White line */
-    margin: 10px auto; /* Centering the line and adding some space */
+    border-top: 1px solid white;
+    margin: 10px auto;
 }
 
 /* Footer Links Section Styling */
 .footer-links p {
-    margin: 10px 0; /* Margin between each link */
+    margin: 10px 0;
 }
 
 /* Footer Link Styling */
 .footer-links a {
     color: white;
     text-decoration: none;
-    font-weight: 400; /* Normal weight text */
+    font-weight: 400;
     font-size: 1rem;
-    letter-spacing: 0.5px; /* Slight spacing between letters */
+    letter-spacing: 0.5px;
 }
 
 /* Remove hover effect from non-link elements */
@@ -282,14 +280,13 @@ footer p {
 
 /* Hover effect only on links */
 .footer-links a:hover {
-    color: #7b7b82; /* Hover color */
-    cursor: pointer; /* Show pointer cursor on hover */
+    color: #7b7b82;
+    cursor: pointer;
 }
 
-/* Optional hover effect for footer text */
 footer p:hover {
-    color: inherit; /* No color change on hover for non-link text */
-    cursor: default; /* Default cursor for non-link text */
+    color: inherit;
+    cursor: default;
 }
 
 /* Mobile Responsiveness */
@@ -298,30 +295,25 @@ footer p:hover {
         flex-direction: column;
         align-items: center;
     }
-
     header nav ul {
         flex-direction: column;
         padding: 10px 0;
     }
-
     .contact-form-container {
         width: 90%;
     }
     .three-part-layout{
         flex-direction: column;
     }
-    .left-section{
-        display: flex;
-    }
-    .right-section{
+    .left-section, .right-section{
         display: flex;
     }
 }
 .footer-line {
-    width: 100%; /* Adjust the width of the line as needed */
+    width: 100%;
     border: 0;
-    border-top: 1px solid rgb(0, 0, 0); /* White line */
-    margin: 10px auto; /* Centering the line and adding some space */
+    border-top: 1px solid rgb(0, 0, 0);
+    margin: 10px auto;
 }
 
 /* Navigation Styling */
@@ -349,17 +341,16 @@ nav ul li a {
 @media screen and (max-width: 978px) {
     nav ul {
         display: none; /* Hide the menu on smaller screens */
-        flex-direction: column; /* Align the items vertically */
-        width: 100%; /* Ensure the menu takes full width */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
         padding: 0;
         margin-top: 0;
     }
-
     nav ul li {
         margin: 10px 0;
-        text-align: center; /* Center the items when they are stacked */
+        text-align: center;
     }
-
     .burger-icon {
         display: block; /* Show the burger icon */
         cursor: pointer;
@@ -367,165 +358,25 @@ nav ul li a {
         color: black;
         padding: 10px;
     }
-
     .menu-active {
         display: flex; /* When active, display the menu */
     }
 }
 
-/* Hide the navigation menu on mobile devices */
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    margin-top: 10px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    margin-top: 10px;
-}
-
-/* Initially, the burger icon is hidden */
-.burger-icon {
-    display: none;
-    cursor: pointer;
-}
-
-/* Style the burger icon (when displayed) */
-.burger-icon i {
-    font-size: 30px;
-    color: black;
-}
-
-/* General styles for header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-/* Logo container */
-.logo-container {
-    flex: 1;
-}
-
-/* Style for the burger icon and sign-in icon (both will be aligned horizontally) */
-.header .burger-icon,
-.header .sign-in-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-}
-
-/* Style for the burger icon (when displayed) */
-.burger-icon i {
-    font-size: 30px;
-    color: black;
-}
-
-/* Style for the sign-in (profile) icon */
-.sign-in-icon i {
-    font-size: 25px;
-    color: black;
-}
-
-/* Navigation styling */
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    margin-top: 10px;
-}
-
-/* Initially, the burger icon is hidden */
-.burger-icon {
-    display: none;
-    cursor: pointer;
-}
-
-/* General styles for header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-/* Logo container */
-.logo-container {
-    flex: 1;
-}
-
-/* Style for the burger icon and sign-in icon (both will be aligned horizontally) */
-.header .burger-icon,
-.header .sign-in-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-}
-
-/* Style for the burger icon (when displayed) */
-.burger-icon i {
-    font-size: 30px;
-    color: black;
-}
-
-/* Style for the sign-in (profile) icon */
-.sign-in-icon i {
-    font-size: 25px;
-    color: black;
-}
-/* General styles for header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-/* Logo container */
-.logo-container {
-    flex: 1;
-}
-
-/* Style for the burger icon and sign-in icon (both will be aligned horizontally) */
-.header .burger-icon,
-.header .sign-in-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-}
-
-/* Style for the burger icon (when displayed) */
-.burger-icon i {
-    font-size: 30px;
-    color: black;
-}
-
-/* Style for the sign-in (profile) icon */
-.sign-in-icon i {
-    font-size: 25px;
-    color: black;
-}
-
-/* Navigation styling */
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    margin-top: 10px;
-}
-
 /* By default, hide the burger icon and show navigation links */
 .burger-icon {
     display: none;
+    cursor: pointer;
+}
+
+.burger-icon i {
+    font-size: 30px;
+    color: black;
+}
+
+.sign-in-icon i {
+    font-size: 25px;
+    color: black;
 }
 
 /* Media Query for Small Screens */
@@ -536,14 +387,16 @@ nav ul {
         align-items: center;
         width: 100%;
     }
-
     /* Show the burger icon on smaller screens */
     .burger-icon {
         display: block;
     }
-
     /* When the menu is active, show the navigation links */
     nav ul.menu-active {
         display: flex;
     }
 }
+
+/* New CSS Note:
+   Additional JavaScript will handle showing/hiding the nav on desktop when not maximized.
+*/
