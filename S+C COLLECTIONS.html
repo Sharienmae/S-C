@@ -103,5 +103,41 @@
         
         <p>&copy; 2025 S + C | All rights reserved. S + C shows different style of fashion nowadays through our site that can everyone view this page and have an idea for their ootd.</p>
     </footer> 
+    <script>
+        // Function to update UI based on window state (maximized vs. not maximized)
+        function updateUI() {
+          const burgerIcon = document.querySelector('.burger-icon');
+          const navMenu = document.querySelector('nav ul');
+          const threshold = 10; // Small threshold for comparison
+          if (Math.abs(window.innerWidth - screen.availWidth) < threshold) {
+            // Window is maximized – hide burger icon and show nav
+            burgerIcon.style.display = "none";
+            navMenu.style.display = "flex";
+          } else {
+            // Window is not maximized – show burger icon
+            burgerIcon.style.display = "block";
+            // Hide nav menu by default unless toggled active
+            if (!navMenu.classList.contains('menu-active')) {
+              navMenu.style.display = "none";
+            }
+          }
+        }
+        
+        // Toggle navigation menu when burger icon is clicked
+        const burgerIcon = document.querySelector('.burger-icon');
+        const navMenu = document.querySelector('nav ul');
+        burgerIcon.addEventListener('click', () => {
+          navMenu.classList.toggle('menu-active');
+          if (navMenu.classList.contains('menu-active')) {
+            navMenu.style.display = "flex";
+          } else {
+            navMenu.style.display = "none";
+          }
+        });
+        
+        // Update UI on window resize and on page load
+        window.addEventListener("resize", updateUI);
+        updateUI();
+      </script>
 </body>
 </html>
