@@ -158,47 +158,132 @@ nav ul li a:hover {
     justify-content: space-between;
     margin: 40px;
 }
-/* Center Section (Main Image) */
-.center-section {
-    width: 100%;
-    text-align: center;
-}
 
-.center-section img {
-    width: 98%;
-    height: auto;
-    border-radius: 0px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.center-section .image-description {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-}
-
-/* Right Section */
+/* Ensure the right-section is centered */
 .right-section {
-    width: 35%;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    width: 100%; /* Ensure the container takes full width */
 }
 
-.right-image {
+/* Container for all the images */
+.image-container {
+    display: flex; /* Align images in a row */
+    justify-content: center; /* Center all images horizontally */
+    align-items: center; /* Center images vertically */
+    gap: 20px; /* Add space between the images */
+}
+
+/* Styling for the right image */
+.right-image, .centered-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.right-image img {
+.right-image img, .centered-image img {
     width: 100%;
-    height: auto;
-    border-radius: 0px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Optional: Adjust image size */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 0px; /* Optional: rounded corners for the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
 }
 
-.right-image p {
+.right-image p, .centered-image p {
     margin-top: 10px;
     font-size: 16px;
     color: #333;
 }
+
+/* Ensure all images are aligned and centered */
+.centered-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.centered-image img {
+    max-width: 300px; /* Ensures responsive image */
+    height: auto; /* Maintains the aspect ratio */
+}
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.right-image, .centered-image {
+    position: relative;
+    width: 30%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.right-image img, .centered-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.right-image:hover img, .centered-image:hover img {
+    transform: scale(1.1); /* Scale up the image */
+}
+
+.right-image:hover, .centered-image:hover {
+    z-index: 10; /* Bring the image to the front */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+p {
+    text-align: center;
+}
+/* Image Container Styling */
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    gap: 20px; /* Add space between images */
+    opacity: 0; /* Make the container initially invisible */
+    animation: slideUp 1s forwards; /* Animate the container */
+    animation-delay: 0.5s; /* Delay the animation */
+}
+
+.right-image, .centered-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    opacity: 0; /* Make images initially invisible */
+    transform: translateY(50px); /* Start from below */
+    animation: slideUp 1s forwards;
+}
+
+.right-image:nth-child(1) {
+    animation-delay: 1s; /* Delay for the first image */
+}
+
+.centered-image:nth-child(2) {
+    animation-delay: 1.5s; /* Delay for the second image */
+}
+
+.right-image:nth-child(3) {
+    animation-delay: 2s; /* Delay for the third image */
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Start from below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at its original position */
+    }
+}
+
 
 /* Footer Styling */
 footer {

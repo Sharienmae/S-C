@@ -221,7 +221,7 @@ footer p:hover {
 .footer-line {
     width: 100%; /* Adjust the width of the line as needed */
     border: 0;
-    border-top: 1px solid rgb(0, 0, 0); /* White line */
+    border-top: 1px solid #ffffff; /* White line */
     margin: 10px auto; /* Centering the line and adding some space */
 }
 .right-section {
