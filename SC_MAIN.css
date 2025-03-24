@@ -408,6 +408,22 @@ nav ul li a {
     }
 }
 
-/* New CSS Note:
-   Additional JavaScript will handle showing/hiding the nav on desktop when not maximized.
-*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Para may space sa pagitan */
+  }
+  
+  .burger-icon, .profile-icon {
+    font-size: 24px; /* Palakihin ang laki */
+    cursor: pointer; /* Para clickable */
+  }
+  
+  

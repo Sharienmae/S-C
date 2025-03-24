@@ -20,15 +20,11 @@
       </a>
     </div>
     <!-- Sign In Icon -->
-    <div class="sign-in-icon">
-      <a href="S+C MAIN.html">
-        <i class="fas fa-user"></i>
-      </a>
+    <div class="nav-icons">
+      <div class="burger-icon">☰</div>
+      <div class="profile-icon">👤</div>
     </div>
-    <!-- Hamburger Icon for Mobile/Non-maximized windows -->
-    <div class="burger-icon">
-      <i class="fas fa-bars"></i>
-    </div>
+    
   </div>
 
   <!-- Navigation -->
@@ -136,39 +132,32 @@
   <!-- JavaScript for Burger Menu and Window State Detection -->
   <script>
     // Function to update UI based on window state (maximized vs. not maximized)
+    document.addEventListener("DOMContentLoaded", function () {
+    const burgerIcon = document.querySelector(".burger-icon");
+    const navMenu = document.querySelector("nav ul");
+    
     function updateUI() {
-      const burgerIcon = document.querySelector('.burger-icon');
-      const navMenu = document.querySelector('nav ul');
-      const threshold = 10; // Small threshold for comparison
-      if (Math.abs(window.innerWidth - screen.availWidth) < threshold) {
-        // Window is maximized – hide burger icon and show nav
-        burgerIcon.style.display = "none";
-        navMenu.style.display = "flex";
-      } else {
-        // Window is not maximized – show burger icon
-        burgerIcon.style.display = "block";
-        // Hide nav menu by default unless toggled active
-        if (!navMenu.classList.contains('menu-active')) {
-          navMenu.style.display = "none";
+        if (window.innerWidth >= screen.availWidth - 10) {
+            // Window is maximized – hide burger icon and show nav
+            burgerIcon.style.display = "none";
+            navMenu.style.display = "flex";
+        } else {
+            // Window is not maximized – show burger icon
+            burgerIcon.style.display = "block";
+            navMenu.style.display = "none"; // Hide menu initially
         }
-      }
     }
     
     // Toggle navigation menu when burger icon is clicked
-    const burgerIcon = document.querySelector('.burger-icon');
-    const navMenu = document.querySelector('nav ul');
-    burgerIcon.addEventListener('click', () => {
-      navMenu.classList.toggle('menu-active');
-      if (navMenu.classList.contains('menu-active')) {
-        navMenu.style.display = "flex";
-      } else {
-        navMenu.style.display = "none";
-      }
+    burgerIcon.addEventListener("click", () => {
+        navMenu.classList.toggle("menu-active");
+        navMenu.style.display = navMenu.classList.contains("menu-active") ? "flex" : "none";
     });
     
     // Update UI on window resize and on page load
     window.addEventListener("resize", updateUI);
     updateUI();
+});
   </script>
 </body>
 </html>

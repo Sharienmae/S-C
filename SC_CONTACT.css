@@ -309,3 +309,21 @@ footer p:hover {
     border-top: 1px solid rgb(0, 0, 0); /* White line */
     margin: 10px auto; /* Centering the line and adding some space */
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Para may space sa pagitan */
+  }
+  
+  .burger-icon, .profile-icon {
+    font-size: 24px; /* Palakihin ang laki */
+    cursor: pointer; /* Para clickable */
+  }
