@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 .top-header-image {
-    width: 100%; /* Ensure the image takes up full width */
+    width: 75%; /* Ensure the image takes up full width */
     height: auto;
-    border-radius: 8px; /* Optional: round the corners for a smoother look */
+    border-radius: 0px; /* Optional: round the corners for a smoother look */
     box-shadow: 0 0 15px 5px rgba(255, 223, 0, 0.7); /* Initial glow effect */
     animation: glow 1.5s infinite alternate; /* Continuous glowing animation */
 }

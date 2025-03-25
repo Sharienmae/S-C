@@ -127,32 +127,78 @@ nav ul li a:hover::after {
     line-height: 1.7;
 }
 
-/* Footer */
-.footer {
-    background-color: black;
-    color: white;
+/* Footer Styling */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
-    padding: 30px;
-    margin-top: 40px;
-    font-size: 14px;
 }
 
+/* Footer Content Styling */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo Image Styling */
 .footer-logo {
-    font-size: 26px;
-    font-weight: bold;
+    width: 120px; /* Adjust logo size as needed */
+    height: auto;
+    margin-bottom: 10px; /* Space below logo */
 }
 
+/* Description Text Styling */
 .footer-description {
-    font-size: 1.1em;
-    margin-top: 10px;
+    font-size: 1rem;
+    margin: 10px 0; /* Margin around the description */
+    font-weight: 300; /* Lighter weight for description */
+    letter-spacing: 1px;
 }
 
+/* Line Styling for Separator (Centering the line) */
 .footer-line {
-    width: 80%;
-    margin: 15px auto;
-    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    width: 80%; /* Adjust the width of the line as needed */
+
+    border: 0;
+    border-top: 1px solid rgb(0, 0, 0);
+    margin: 10px auto;
 }
 
+/* Footer Links Section Styling */
+.footer-links p {
+    margin: 10px 0;
+}
+
+/* Footer Link Styling */
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Remove hover effect from non-link elements */
+footer p {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Hover effect only on links */
+.footer-links a:hover {
+    color: #7b7b82;
+    cursor: pointer;
+}
+
+footer p:hover {
+    color: inherit;
+    cursor: default;
+}
 /* ✅ Responsive Design */
 @media screen and (max-width: 768px) {
     .burger-icon {
