@@ -398,7 +398,6 @@ footer p:hover {
     border-top: 1px solid rgb(0, 0, 0); /* White line */
     margin: 10px auto; /* Centering the line and adding some space */
 }
-
 .navbar {
     display: flex;
     justify-content: space-between;

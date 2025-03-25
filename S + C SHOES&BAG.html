@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S + C Shoes & Bags</title>
+    <title>S + C Dress, Clothes & Jeans</title>
     <link rel="stylesheet" href="SC_SHOES&BAG.css">
 </head>
 
@@ -43,7 +43,7 @@
                 <li><a href="S + C STYLE&FASHIONG.html">Style and Fashion Gallery</a></li>
                 <li><a href="S + C TIPS&TRICKS.html">Tips & Tricks</a></li>
                 <li><a href="S + C NEWSALERT.html">News & Fashion Alerts</a></li>
-                <li><a href="news_alerts.html">Accessories</a></li>
+                <li><a href="S + C ACCESSORIES.html">Accessories</a></li>
                 <li><a href="news_alerts.html">Editorial</a></li>
                 <li><a href="news_alerts.html">Designers</a></li>
             </ul>
@@ -54,29 +54,30 @@
     <section class="home-section">
         <div class="catchline">
             <font face="San Serif" size="6" color="black">
-                <h2><a href="S + C SHOES&BAG.html" class="fashion-link">Shoes and Bags</a></h2>
+                <h2><a href="S+C DCJ'S.html" class="fashion-link">Shoes and Bags</a></h2>
             </font>
         </div>        
+
             <!-- Right Section -->
             <div class="right-section">
-                <!-- First image (Image 3) -->
-                <div class="image-3">
-                    <a href="link_to_page3.html">
-                        <img src="SC_Images/magazine.jpg" alt="Image 3">
-                    </a>
-                        <p>Description for Image 3</p>
+                <div class="image-container">
+                    <div class="right-image">
+                        <a href="S + C BAGS.html">
+                            <img src="SC_Images/bag.jpg" alt="Image 3">
+                        </a>
+                        <p>A <b>Dress</b> one-piece garment, usually worn by women especially in summer days.</p>
+                    </div>
+                    <div class="centered-image">
+                        <a href="S + C SHOES.html">
+                            <img src="SC_Images/shoe.jpg" alt="Image 5">
+                        </a>
+                        <p><b>Jeans</b> a pair of pants made from denim fabric, worn by both men and women.</p>
+                    </div>
                 </div>
-            
-                <!-- Second image (Image 4) -->
-                <div class="image-4">
-                    <a href="link_to_page4.html">
-                        <img src="SC_Images/magazine.jpg" alt="Image 4">
-                    </a>
-                        <p>Description for Image 4</p>
-                </div>
-            </div>                           
+            </div>                 
         </section>
     </section>
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
@@ -105,41 +106,33 @@
         <p>&copy; 2025 S + C | All rights reserved. S + C shows different style of fashion nowadays through our site that can everyone view this page and have an idea for their ootd.</p>
     </footer> 
     <script>
-        // Function to update UI based on window state (maximized vs. not maximized)
-        function updateUI() {
-          const burgerIcon = document.querySelector('.burger-icon');
-          const navMenu = document.querySelector('nav ul');
-          const threshold = 10; // Small threshold for comparison
-          if (Math.abs(window.innerWidth - screen.availWidth) < threshold) {
+    // Function to update UI based on window state (maximized vs. not maximized)
+    document.addEventListener("DOMContentLoaded", function () {
+    const burgerIcon = document.querySelector(".burger-icon");
+    const navMenu = document.querySelector("nav ul");
+    
+    function updateUI() {
+        if (window.innerWidth >= screen.availWidth - 10) {
             // Window is maximized – hide burger icon and show nav
             burgerIcon.style.display = "none";
             navMenu.style.display = "flex";
-          } else {
+        } else {
             // Window is not maximized – show burger icon
             burgerIcon.style.display = "block";
-            // Hide nav menu by default unless toggled active
-            if (!navMenu.classList.contains('menu-active')) {
-              navMenu.style.display = "none";
-            }
-          }
+            navMenu.style.display = "none"; // Hide menu initially
         }
-        
-        // Toggle navigation menu when burger icon is clicked
-        const burgerIcon = document.querySelector('.burger-icon');
-        const navMenu = document.querySelector('nav ul');
-        burgerIcon.addEventListener('click', () => {
-          navMenu.classList.toggle('menu-active');
-          if (navMenu.classList.contains('menu-active')) {
-            navMenu.style.display = "flex";
-          } else {
-            navMenu.style.display = "none";
-          }
-        });
-        
-        // Update UI on window resize and on page load
-        window.addEventListener("resize", updateUI);
-        updateUI();
-      </script>
-
+    }
+    
+    // Toggle navigation menu when burger icon is clicked
+    burgerIcon.addEventListener("click", () => {
+        navMenu.classList.toggle("menu-active");
+        navMenu.style.display = navMenu.classList.contains("menu-active") ? "flex" : "none";
+    });
+    
+    // Update UI on window resize and on page load
+    window.addEventListener("resize", updateUI);
+    updateUI();
+});
+  </script>
 </body>
 </html>

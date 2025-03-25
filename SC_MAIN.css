@@ -29,7 +29,7 @@ body {
 /* Body and general styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     color: #333;
 }
 /* Header Styling */
@@ -223,7 +223,7 @@ nav ul li a:hover {
 /* Footer Styling */
 footer {
     background-color: #000000;
-    color: white;
+    color: #ffffff;
     padding: 20px 0;
     text-align: center;
 }
