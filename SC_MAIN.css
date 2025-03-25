@@ -180,12 +180,12 @@ nav ul li a:hover {
 
 /* Center Section (Main Image) */
 .center-section {
-    width: 100%;
+    width: 760px;
     text-align: center;
 }
 
 .center-section img {
-    width: 100%;
+    width: 760px;
     height: auto;
     border-radius: 0px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -418,5 +418,19 @@ nav ul li a {
     font-size: 24px; /* Palakihin ang laki */
     cursor: pointer; /* Para clickable */
   }
-  
+  .right-image:nth-child(3) {
+    animation-delay: 2s; /* Delay for the third image */
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Start from below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at its original position */
+    }
+}
   
