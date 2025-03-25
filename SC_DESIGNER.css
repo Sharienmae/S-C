@@ -1,40 +1,26 @@
-/* General Reset and Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .top-header-image {
-    width: 100%; /* Ensure the image takes up full width */
-    height: auto;
-    border-radius: 8px; /* Optional: round the corners for a smoother look */
-    box-shadow: 0 0 15px 5px rgba(255, 223, 0, 0.7); /* Initial glow effect */
-    animation: glow 1.5s infinite alternate; /* Continuous glowing animation */
-}
+    width: 100%;     height: auto;
+    border-radius: 8px;     box-shadow: 0 0 15px 5px rgba(255, 223, 0, 0.7);     animation: glow 1.5s infinite alternate; }
 
-/* Continuous glowing effect */
 @keyframes glow {
     0% {
-        box-shadow: 0 0 15px 5px #7c7c5a; /* Subtle initial glow */
-    }
+        box-shadow: 0 0 15px 5px #7c7c5a;     }
     50% {
-        box-shadow: 0 0 30px 10px #7b7b82; /* Bright glow at the middle */
-    }
+        box-shadow: 0 0 30px 10px #7b7b82;     }
     100% {
-        box-shadow: 0 0 15px 5px #000000b3; /* Return to initial glow */
-    }
+        box-shadow: 0 0 15px 5px #000000b3;     }
 }
-/* Body and general styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #ffffff;
     color: #333;
 }
 
-/* Header Styling */
-/* Ensure the header takes up the full width and the logo stays centered */
-/* Ensure the header takes up the full width and the logo stays centered */
-/* Ensure the header takes up the full width and the logo stays centered */
 .header {
     display: flex;
     justify-content: space-between;
@@ -42,10 +28,8 @@ body {
     padding: 20px;
     position: relative;
     width: 100%;
-    box-sizing: border-box; /* Ensures padding is included in width */
-}
+    box-sizing: border-box; }
 
-/* Center the logo container */
 .logo-container {
     flex-grow: 1;
     text-align: center;
@@ -53,24 +37,18 @@ body {
     font-size: 20px;
 }
 
-/* Ensure the sign-in icon aligns to the right */
 .sign-in-icon {
-    margin-left: auto; /* Pushes the icon to the right */
-}
+    margin-left: auto; }
 
 .sign-in-icon i {
-    font-size: 24px; /* Adjust the size of the icon */
-    color: black; /* Default icon color */
-    cursor: pointer;
+    font-size: 24px;     color: black;     cursor: pointer;
     transition: color 0.3s ease;
 }
 
 .sign-in-icon i:hover {
-    color: #7b7b82; /* Change color on hover */
-}
+    color: #7b7b82; }
 
 
-/* Navigation Styling */
 nav ul {
     list-style: none;
     display: flex;
@@ -91,7 +69,6 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-/* Underline animation on hover */
 nav ul li a::after {
     content: "";
     position: absolute;
@@ -110,21 +87,12 @@ nav ul li a:hover {
 nav ul li a:hover::after {
     width: 100%;
 }
-/* Style for the Fashion link */
 .fashion-link {
-    text-decoration: none; /* Removes underline */
-    color: black; /* Text color */
-    font-size: 2em; /* Size of the "Fashion" text */
-    font-weight: bold; /* Makes the text bold */
-    transition: color 0.3s ease; /* Smooth transition for color change */
-}
+    text-decoration: none;     color: black;     font-size: 2em;     font-weight: bold;     transition: color 0.3s ease; }
 
-/* Hover effect for the "Fashion" text */
 .fashion-link:hover {
-    color: #7b7b82; /* Change color on hover (tomato red) */
-}
+    color: #7b7b82; }
 
-/* Navigation links */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -141,40 +109,27 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-/* Hover effect for navigation links */
 nav ul li a:hover {
-    color: #7b7b82; /* Tomato red color for hover */
-}
+    color: #7b7b82; }
 
-/* Home Section Styling */
 .home-section {
     text-align: center;
     padding: 40px 20px;
 }
 
-/* Three-Part Layout for Left, Center, Right sections */
 .three-part-layout {
     display: flex;
     justify-content: space-between;
     margin: 40px;
 }
 
-/* Ensure the right-section is centered */
 .right-section {
     display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    width: 100%; /* Ensure the container takes full width */
-}
+    justify-content: center;     width: 100%; }
 
-/* Container for all the images */
 .image-container {
-    display: flex; /* Align images in a row */
-    justify-content: center; /* Center all images horizontally */
-    align-items: center; /* Center images vertically */
-    gap: 50px; /* Add space between the images */
-}
+    display: flex;     justify-content: center;     align-items: center;     gap: 50px; }
 
-/* Styling for the right image */
 .right-image, .centered-image {
     display: flex;
     flex-direction: column;
@@ -182,27 +137,19 @@ nav ul li a:hover {
     text-align: center;
 }
 .right-image:nth-child(3) {
-    animation-delay: 2s; /* Delay for the third image */
-}
+    animation-delay: 2s; }
 
-/* Slide Up Animation */
 @keyframes slideUp {
     0% {
         opacity: 0;
-        transform: translateY(50px); /* Start from below */
-    }
+        transform: translateY(50px);     }
     100% {
         opacity: 1;
-        transform: translateY(0); /* End at its original position */
-    }
+        transform: translateY(0);     }
 }
 .right-image img, .centered-image img {
     width: 500px;
-    max-width: 500px; /* Optional: Adjust image size */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 0px; /* Optional: rounded corners for the image */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
-}
+    max-width: 500px;     height: auto;     border-radius: 0px;     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
 
 .right-image p, .centered-image p {
     margin-top: 10px;
@@ -210,7 +157,6 @@ nav ul li a:hover {
     color: #333;
 }
 
-/* Ensure all images are aligned and centered */
 .centered-image {
     display: flex;
     flex-direction: column;
@@ -219,9 +165,7 @@ nav ul li a:hover {
     text-align: center;
 }
 .centered-image img {
-    max-width: 300px; /* Ensures responsive image */
-    height: auto; /* Maintains the aspect ratio */
-}
+    max-width: 300px;     height: auto; }
 .image-container {
     display: flex;
     justify-content: space-around;
@@ -242,64 +186,45 @@ nav ul li a:hover {
 }
 
 .right-image:hover img, .centered-image:hover img {
-    transform: scale(1.1); /* Scale up the image */
-}
+    transform: scale(1.1); }
 
 .right-image:hover, .centered-image:hover {
-    z-index: 10; /* Bring the image to the front */
-    cursor: pointer; /* Change cursor to indicate interactivity */
-}
+    z-index: 10;     cursor: pointer; }
 
 p {
     text-align: center;
 }
-/* Image Container Styling */
 .image-container {
     display: flex;
-    justify-content: center; /* Center the images horizontally */
-    align-items: center; /* Center the images vertically */
-    gap: 20px; /* Add space between images */
-    opacity: 0; /* Make the container initially invisible */
-    animation: slideUp 1s forwards; /* Animate the container */
-    animation-delay: 0.5s; /* Delay the animation */
-}
+    justify-content: center;     align-items: center;     gap: 20px;     opacity: 0;     animation: slideUp 1s forwards;     animation-delay: 0.5s; }
 
 .right-image, .centered-image {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    opacity: 0; /* Make images initially invisible */
-    transform: translateY(50px); /* Start from below */
-    animation: slideUp 1s forwards;
+    opacity: 0;     transform: translateY(50px);     animation: slideUp 1s forwards;
 }
 
 .right-image:nth-child(1) {
-    animation-delay: 1s; /* Delay for the first image */
-}
+    animation-delay: 1s; }
 
 .centered-image:nth-child(2) {
-    animation-delay: 1.5s; /* Delay for the second image */
-}
+    animation-delay: 1.5s; }
 
 .right-image:nth-child(3) {
-    animation-delay: 2s; /* Delay for the third image */
-}
+    animation-delay: 2s; }
 
-/* Slide Up Animation */
 @keyframes slideUp {
     0% {
         opacity: 0;
-        transform: translateY(50px); /* Start from below */
-    }
+        transform: translateY(50px);     }
     100% {
         opacity: 1;
-        transform: translateY(0); /* End at its original position */
-    }
+        transform: translateY(0);     }
 }
 
 
-/* Footer Styling */
 footer {
     background-color: #000000;
     color: white;
@@ -307,51 +232,33 @@ footer {
     text-align: center;
 }
 
-/* Footer Content Styling */
 .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Logo Image Styling */
 .footer-logo {
-    width: 120px; /* Adjust logo size as needed */
-    height: auto;
-    margin-bottom: 10px; /* Space below logo */
-}
+    width: 120px;     height: auto;
+    margin-bottom: 10px; }
 
-/* Description Text Styling */
 .footer-description {
     font-size: 1rem;
-    margin: 10px 0; /* Margin around the description */
-    font-weight: 300; /* Lighter weight for description */
-    letter-spacing: 1px; /* Optional: slight spacing between letters */
-}
+    margin: 10px 0;     font-weight: 300;     letter-spacing: 1px; }
 
-/* Line Styling for Separator (Centering the line) */
 .footer-line {
-    width: 80%; /* Adjust the width of the line as needed */
-    border: 0;
-    border-top: 1px solid white; /* White line */
-    margin: 10px auto; /* Centering the line and adding some space */
-}
+    width: 80%;     border: 0;
+    border-top: 1px solid white;     margin: 10px auto; }
 
-/* Footer Links Section Styling */
 .footer-links p {
-    margin: 10px 0; /* Margin between each link */
-}
+    margin: 10px 0; }
 
-/* Footer Link Styling */
 .footer-links a {
     color: white;
     text-decoration: none;
-    font-weight: 400; /* Normal weight text */
-    font-size: 1rem;
-    letter-spacing: 0.5px; /* Slight spacing between letters */
-}
+    font-weight: 400;     font-size: 1rem;
+    letter-spacing: 0.5px; }
 
-/* Remove hover effect from non-link elements */
 footer p {
     font-size: 1rem;
     margin: 0;
@@ -359,19 +266,12 @@ footer p {
     letter-spacing: 1px;
 }
 
-/* Hover effect only on links */
 .footer-links a:hover {
-    color: #7b7b82; /* Hover color */
-    cursor: pointer; /* Show pointer cursor on hover */
-}
+    color: #7b7b82;     cursor: pointer; }
 
-/* Optional hover effect for footer text */
 footer p:hover {
-    color: inherit; /* No color change on hover for non-link text */
-    cursor: default; /* Default cursor for non-link text */
-}
+    color: inherit;     cursor: default; }
 
-/* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
@@ -388,11 +288,8 @@ footer p:hover {
     }
 }
 .footer-line {
-    width: 100%; /* Adjust the width of the line as needed */
-    border: 0;
-    border-top: 1px solid rgb(0, 0, 0); /* White line */
-    margin: 10px auto; /* Centering the line and adding some space */
-}
+    width: 100%;     border: 0;
+    border-top: 1px solid rgb(0, 0, 0);     margin: 10px auto; }
 
 .navbar {
     display: flex;
@@ -404,13 +301,10 @@ footer p:hover {
   .nav-icons {
     display: flex;
     align-items: left;
-    gap: 15px; /* Para may space sa pagitan */
-  }
+    gap: 15px;   }
   
   .burger-icon, .profile-icon {
-    font-size: 24px; /* Palakihin ang laki */
-    cursor: pointer; /* Para clickable */
-  }
+    font-size: 24px;     cursor: pointer;   }
 
   .nav-menu.menu-active {
     display: flex;

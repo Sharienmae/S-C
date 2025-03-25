@@ -6,17 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S + C FASHION</title>
     <link rel="stylesheet" href="SC_SHOES&BAG.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <head>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    </head>
-    
     <div class="header">
-        <!-- Logo container -->
         <div class="logo-container">
             <a href="S+C MAIN.html" style="text-decoration: none;">
                 <font face="Rotis San Serif" size="10" color="black">
@@ -24,35 +19,34 @@
                 </font>
             </a>
         </div>
-    
-        <!-- Sign In Icon (Person Icon) -->
+
         <div class="sign-in-icon">
             <a href="S+C MAIN.html">
-                <i class="fas fa-user"></i> <!-- Font Awesome User Icon -->
+                <i class="fas fa-user"></i>
             </a>
         </div>
     </div>
 
     <div class="nav-icons">
         <div class="burger-icon">☰</div>
-      </div>
-        <nav>
-            <ul>
-                <li><a href="S + C FASHION.html">Fashion Design</a></li>
-                <li><a href="S+C DCJ'S.html">Dress, Clothes & Jeans</a></li>
-                <li><a href="S + C SHOES&BAG.html">Shoes & Bags</a></li>
-                <li><a href="S + C STYLE&FASHIONG.html">Style and Fashion Gallery</a></li>
-                <li><a href="S + C TIPS&TRICKS.html">Tips & Tricks</a></li>
-                <li><a href="S + C NEWSALERT.html">News & Fashion Alerts</a></li>
-                <li><a href="S + C ACCESSORIES.html">Accessories</a></li>
-                <li><a href="S + C EDITORIAL.html">Editorial</a></li>
-                <li><a href="SC_DESIGNER.css">Designers</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Line Separator (Bottom) -->
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="S + C FASHION.html">Fashion Design</a></li>
+            <li><a href="S+C DCJ'S.html">Dress, Clothes & Jeans</a></li>
+            <li><a href="S + C SHOES&BAG.html">Shoes & Bags</a></li>
+            <li><a href="S + C STYLE&FASHIONG.html">Style and Fashion Gallery</a></li>
+            <li><a href="S + C TIPS&TRICKS.html">Tips & Tricks</a></li>
+            <li><a href="S + C NEWSALERT.html">News & Fashion Alerts</a></li>
+            <li><a href="S + C ACCESSORIES.html">Accessories</a></li>
+            <li><a href="new.html">Editorial</a></li>
+            <li><a href="SC_DESIGNER.css">Designers</a></li>
+        </ul>
+    </nav>
+
     <hr class="footer-line">
-    <!-- Home Section with Left, Center, and Right Columns -->
+
     <section class="home-section">
         <div class="catchline">
             <font face="San Serif" size="10" color="black">
@@ -61,36 +55,25 @@
             <font face="San Serif" size="4" color="black">
                 <h2><a href="S + C FASHION.html" class="fashion-link">Amancio Ortega</a></h2>
             </font>
-                <font face="San Serif" size="5" color="black">
+            <font face="San Serif" size="5" color="black">
                 <p class="image-description">Spanish billionaire businessman, best known as the founder and former chairman of Inditex, the world’s largest fashion retailer, which owns popular brands like Zara, Massimo Dutti, Pull&Bear, and Bershka.</p>
             </font>
-        </div>        
+        </div>
 
-
-
-            <!-- Center Section (Main Image) -->
-             <center>
+        <center>
             <div class="right-image">
                 <img src="SC_Images/zaradesigner.jpg" alt="Fashion Model">
-            </center>
             </div>
-        </section>
+        </center>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <!-- Logo Image -->
             <font face="Rotis San Serif" size="20" color="white">
                 <p>S + C</p>
-            
-            <!-- Description Text -->
+            </font>
             <p class="footer-description">Welcome to S + C - Your own style starts here!</p>
-            
-            <!-- Line Separator (Top) -->
             <hr class="footer-line">
-            
-            <!-- Link Section -->
             <p class="footer-description">MORE FROM S + C</p>
             <div class="footer-links">
                 <p><a href="S+C ABOUT.html">ABOUT S + C</a></p>
@@ -98,41 +81,35 @@
                 <p><a href="S + C CONTACT US.html">CONTACT US</a></p>
             </div>
         </div>
-        
-        <!-- Line Separator (Bottom) -->
         <hr class="footer-line">
-        
         <p>&copy; 2025 S + C | All rights reserved. S + C shows different style of fashion nowadays through our site that can everyone view this page and have an idea for their ootd.</p>
-        <script>
-            // Function to update UI based on window state (maximized vs. not maximized)
-            document.addEventListener("DOMContentLoaded", function () {
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
             const burgerIcon = document.querySelector(".burger-icon");
             const navMenu = document.querySelector("nav ul");
-            
+
             function updateUI() {
                 if (window.innerWidth >= screen.availWidth - 10) {
-                    // Window is maximized – hide burger icon and show nav
                     burgerIcon.style.display = "none";
                     navMenu.style.display = "flex";
                 } else {
-                    // Window is not maximized – show burger icon
                     burgerIcon.style.display = "block";
-                    navMenu.style.display = "none"; // Hide menu initially
+                    navMenu.style.display = "none";
                 }
             }
-            
-            // Toggle navigation menu when burger icon is clicked
+
             burgerIcon.addEventListener("click", () => {
                 navMenu.classList.toggle("menu-active");
                 navMenu.style.display = navMenu.classList.contains("menu-active") ? "flex" : "none";
             });
-            
-            // Update UI on window resize and on page load
+
             window.addEventListener("resize", updateUI);
             updateUI();
         });
-          </script>
-    </footer> 
+    </script>
 
 </body>
+
 </html>

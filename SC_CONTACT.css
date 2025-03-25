@@ -3,39 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Top Header Styles */
-/* Add this to your existing CSS */
-/* Add this to your existing CSS */
 .top-header-image {
-    width: 100%; /* Ensure the image takes up full width */
-    height: auto;
-    border-radius: 8px; /* Optional: round the corners for a smoother look */
-    box-shadow: 0 0 15px 5px rgba(255, 223, 0, 0.7); /* Initial glow effect */
-    animation: glow 1.5s infinite alternate; /* Continuous glowing animation */
-}
+    width: 100%;     height: auto;
+    border-radius: 8px;     box-shadow: 0 0 15px 5px rgba(255, 223, 0, 0.7);     animation: glow 1.5s infinite alternate; }
 
-/* Continuous glowing effect */
 @keyframes glow {
     0% {
-        box-shadow: 0 0 15px 5px #7c7c5a; /* Subtle initial glow */
-    }
+        box-shadow: 0 0 15px 5px #7c7c5a;     }
     50% {
-        box-shadow: 0 0 30px 10px #7b7b82; /* Bright glow at the middle */
-    }
+        box-shadow: 0 0 30px 10px #7b7b82;     }
     100% {
-        box-shadow: 0 0 15px 5px #000000b3; /* Return to initial glow */
-    }
+        box-shadow: 0 0 15px 5px #000000b3;     }
 }
 
 
-/* Body and general styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #ffffff;
     color: #333;
 }
 
-/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -43,10 +30,8 @@ body {
     padding: 20px;
     position: relative;
     width: 100%;
-    box-sizing: border-box; /* Ensures padding is included in width */
-}
+    box-sizing: border-box; }
 
-/* Center the logo container */
 .logo-container {
     flex-grow: 1;
     text-align: center;
@@ -54,24 +39,18 @@ body {
     font-size: 20px;
 }
 
-/* Ensure the sign-in icon aligns to the right */
 .sign-in-icon {
-    margin-left: auto; /* Pushes the icon to the right */
-}
+    margin-left: auto; }
 
 .sign-in-icon i {
-    font-size: 24px; /* Adjust the size of the icon */
-    color: black; /* Default icon color */
-    cursor: pointer;
+    font-size: 24px;     color: black;     cursor: pointer;
     transition: color 0.3s ease;
 }
 
 .sign-in-icon i:hover {
-    color: #7b7b82; /* Change color on hover */
-}
+    color: #7b7b82; }
 
 
-/* Navigation Styling */
 nav ul {
     list-style: none;
     display: flex;
@@ -88,32 +67,21 @@ nav ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 1.2rem;
-    position: relative; /* Needed for the ::after pseudo-element */
-    transition: color 0.3s ease;
+    position: relative;     transition: color 0.3s ease;
 }
 
-/* Underline animation on hover */
 nav ul li a::after {
     content: "";
     position: absolute;
-    bottom: -5px; /* Position the line just below the text */
-    left: 0;
-    width: 0; /* Initially, the width of the line is 0 */
-    height: 2px; /* Line thickness */
-    background-color: #000000; /* The color of the underline */
-    transition: width 0.3s ease; /* Smooth transition for the width */
-}
+    bottom: -5px;     left: 0;
+    width: 0;     height: 2px;     background-color: #000000;     transition: width 0.3s ease; }
 
 nav ul li a:hover {
-    color: #7b7b82; /* Change text color when hovered */
-}
+    color: #7b7b82; }
 
-/* Expand the underline when hovered */
 nav ul li a:hover::after {
-    width: 100%; /* Expand the line to the full width of the text */
-}
+    width: 100%; }
 
-/* Home Section */
 .home-section {
     background-color: #ffffff;
     color: #333;
@@ -121,8 +89,6 @@ nav ul li a:hover::after {
     padding: 50px 20px;
 }
 
-/* Contact Us Section */
-/* Social Media Section */
 .social-media {
     margin-bottom: 20px;
 }
@@ -135,18 +101,13 @@ nav ul li a:hover::after {
 
 .social-media .social-link {
     text-decoration: none;
-    color: #4CAF50; /* Green color for links */
-    font-weight: bold;
+    color: #4CAF50;     font-weight: bold;
     margin: 0 10px;
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
-}
+    transition: color 0.3s ease, transform 0.3s ease; }
 
 .social-media .social-link:hover {
-    color: #2d8b39; /* Darker green on hover */
-    transform: scale(1.1); /* Slightly enlarge the link */
-}
+    color: #2d8b39;     transform: scale(1.1); }
 
-/* Existing Contact Us Styles */
 .contact-us {
     text-align: center;
     padding: 40px 20px;
@@ -189,24 +150,18 @@ nav ul li a:hover::after {
 
 .submit-btn {
     padding: 10px 20px;
-    background-color: #000; /* Initial black background */
-    color: white;
+    background-color: #000;     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     margin-top: 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
-}
+    transition: background-color 0.3s ease, transform 0.3s ease; }
 
-/* Hover effect */
 .submit-btn:hover {
-    background-color: #7b7b82; /* Lighter grey background on hover */
-    transform: scale(1.1); /* Slightly enlarge the button */
-}
+    background-color: #7b7b82;     transform: scale(1.1); }
 
 
-/* Footer */
 footer {
     background-color: #000000;
     color: white;
@@ -214,51 +169,33 @@ footer {
     text-align: center;
 }
 
-/* Footer Content Styling */
 .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Logo Image Styling */
 .footer-logo {
-    width: 120px; /* Adjust logo size as needed */
-    height: auto;
-    margin-bottom: 10px; /* Space below logo */
-}
+    width: 120px;     height: auto;
+    margin-bottom: 10px; }
 
-/* Description Text Styling */
 .footer-description {
     font-size: 1rem;
-    margin: 10px 0; /* Margin around the description */
-    font-weight: 300; /* Lighter weight for description */
-    letter-spacing: 1px; /* Optional: slight spacing between letters */
-}
+    margin: 10px 0;     font-weight: 300;     letter-spacing: 1px; }
 
-/* Line Styling for Separator (Centering the line) */
 .footer-line {
-    width: 80%; /* Adjust the width of the line as needed */
-    border: 0;
-    border-top: 1px solid white; /* White line */
-    margin: 10px auto; /* Centering the line and adding some space */
-}
+    width: 80%;     border: 0;
+    border-top: 1px solid white;     margin: 10px auto; }
 
-/* Footer Links Section Styling */
 .footer-links p {
-    margin: 10px 0; /* Margin between each link */
-}
+    margin: 10px 0; }
 
-/* Footer Link Styling */
 .footer-links a {
     color: white;
     text-decoration: none;
-    font-weight: 400; /* Normal weight text */
-    font-size: 1rem;
-    letter-spacing: 0.5px; /* Slight spacing between letters */
-}
+    font-weight: 400;     font-size: 1rem;
+    letter-spacing: 0.5px; }
 
-/* Remove hover effect from non-link elements */
 footer p {
     font-size: 1rem;
     margin: 0;
@@ -266,19 +203,12 @@ footer p {
     letter-spacing: 1px;
 }
 
-/* Hover effect only on links */
 .footer-links a:hover {
-    color: #7b7b82; /* Hover color */
-    cursor: pointer; /* Show pointer cursor on hover */
-}
+    color: #7b7b82;     cursor: pointer; }
 
-/* Optional hover effect for footer text */
 footer p:hover {
-    color: inherit; /* No color change on hover for non-link text */
-    cursor: default; /* Default cursor for non-link text */
-}
+    color: inherit;     cursor: default; }
 
-/* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
@@ -304,11 +234,8 @@ footer p:hover {
     animation: changeColor 2s infinite;
   }
   .footer-line {
-    width: 100%; /* Adjust the width of the line as needed */
-    border: 0;
-    border-top: 1px solid rgb(0, 0, 0); /* White line */
-    margin: 10px auto; /* Centering the line and adding some space */
-}
+    width: 100%;     border: 0;
+    border-top: 1px solid rgb(0, 0, 0);     margin: 10px auto; }
 
 .navbar {
     display: flex;
@@ -320,10 +247,7 @@ footer p:hover {
   .nav-icons {
     display: flex;
     align-items: center;
-    gap: 15px; /* Para may space sa pagitan */
-  }
+    gap: 15px;   }
   
   .burger-icon, .profile-icon {
-    font-size: 24px; /* Palakihin ang laki */
-    cursor: pointer; /* Para clickable */
-  }
+    font-size: 24px;     cursor: pointer;   }

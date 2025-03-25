@@ -3,45 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .top-header-image {
-    width: 75%; /* Ensure the image takes up full width */
+    width: 75%;
     height: auto;
-    border-radius: 0px; /* Optional: round the corners for a smoother look */
-    box-shadow: 0 0 15px 5px rgba(255, 223, 0, 0.7); /* Initial glow effect */
-    animation: glow 1.5s infinite alternate; /* Continuous glowing animation */
+    box-shadow: 0 0 15px 5px rgba(255, 223, 0, 0.7);
+    animation: glow 1.5s infinite alternate;
 }
 
-/* Continuous glowing effect */
 @keyframes glow {
     0% {
-        box-shadow: 0 0 15px 5px #7c7c5a; /* Subtle initial glow */
+        box-shadow: 0 0 15px 5px #7c7c5a;
     }
     50% {
-        box-shadow: 0 0 30px 10px #7b7b82; /* Bright glow at the middle */
+        box-shadow: 0 0 30px 10px #7b7b82;
     }
     100% {
-        box-shadow: 0 0 15px 5px #000000b3; /* Return to initial glow */
+        box-shadow: 0 0 15px 5px #000000b3;
     }
 }
-/* Body and general styling */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #ffffff;
     color: #333;
 }
 
-/* Header Styling */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: relative;
     width: 100%;
-    box-sizing: border-box; /* Ensures padding is included in width */
 }
 
-/* Center the logo container */
 .logo-container {
     flex-grow: 1;
     text-align: center;
@@ -49,24 +44,21 @@ body {
     font-size: 20px;
 }
 
-/* Ensure the sign-in icon aligns to the right */
 .sign-in-icon {
-    margin-left: auto; /* Pushes the icon to the right */
+    margin-left: auto;
 }
 
 .sign-in-icon i {
-    font-size: 24px; /* Adjust the size of the icon */
-    color: black; /* Default icon color */
+    font-size: 24px;
+    color: black;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
 .sign-in-icon i:hover {
-    color: #7b7b82; /* Change color on hover */
+    color: #7b7b82;
 }
 
-
-/* Navigation Styling */
 nav ul {
     list-style: none;
     display: flex;
@@ -81,13 +73,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: black;
     font-size: 1.2rem;
     position: relative;
     transition: color 0.3s ease;
 }
 
-/* Underline animation on hover */
 nav ul li a::after {
     content: "";
     position: absolute;
@@ -106,6 +97,7 @@ nav ul li a:hover {
 nav ul li a:hover::after {
     width: 100%;
 }
+
 .header-paragraph {
     text-align: center;
     font-size: 1.2rem;
@@ -126,7 +118,7 @@ nav ul li a:hover::after {
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-items: center;
 }
@@ -134,71 +126,62 @@ nav ul li a:hover::after {
 .image-grid img {
     width: 100%;
     height: auto;
-    max-width: 250px; /* Adjust max-width of images */
+    max-width: 250px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* For smaller screens, change to 2 images per row */
 @media (max-width: 768px) {
     .image-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Footer and other styling remain the same */
 footer {
-    background-color: #000000;
+    background-color: #000;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
-/* Footer Content Styling */
 .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Logo Image Styling */
 .footer-logo {
-    width: 120px; /* Adjust logo size as needed */
+    width: 120px;
     height: auto;
-    margin-bottom: 10px; /* Space below logo */
+    margin-bottom: 10px;
 }
 
-/* Description Text Styling */
 .footer-description {
     font-size: 1rem;
-    margin: 10px 0; /* Margin around the description */
-    font-weight: 300; /* Lighter weight for description */
-    letter-spacing: 1px; /* Optional: slight spacing between letters */
+    margin: 10px 0;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
-/* Line Styling for Separator (Centering the line) */
 .footer-line {
-    width: 80%; /* Adjust the width of the line as needed */
+    width: 80%;
     border: 0;
-    border-top: 1px solid white; /* White line */
-    margin: 10px auto; /* Centering the line and adding some space */
+    border-top: 1px solid white;
+    margin: 10px auto;
 }
 
-/* Footer Links Section Styling */
 .footer-links p {
-    margin: 10px 0; /* Margin between each link */
+    margin: 10px 0;
 }
 
-/* Footer Link Styling */
 .footer-links a {
     color: white;
     text-decoration: none;
-    font-weight: 400; /* Normal weight text */
+    font-weight: 400;
     font-size: 1rem;
-    letter-spacing: 0.5px; /* Slight spacing between letters */
+    letter-spacing: 0.5px;
 }
 
-/* Remove hover effect from non-link elements */
 footer p {
     font-size: 1rem;
     margin: 0;
@@ -206,19 +189,16 @@ footer p {
     letter-spacing: 1px;
 }
 
-/* Hover effect only on links */
 .footer-links a:hover {
-    color: #7b7b82; /* Hover color */
-    cursor: pointer; /* Show pointer cursor on hover */
+    color: #7b7b82;
+    cursor: pointer;
 }
 
-/* Optional hover effect for footer text */
 footer p:hover {
-    color: inherit; /* No color change on hover for non-link text */
-    cursor: default; /* Default cursor for non-link text */
+    color: inherit;
+    cursor: default;
 }
 
-/* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
@@ -240,15 +220,15 @@ footer p:hover {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-  }
-  
-  .nav-icons {
+}
+
+.nav-icons {
     display: flex;
     align-items: center;
-    gap: 15px; /* Para may space sa pagitan */
-  }
-  
-  .burger-icon, .profile-icon {
-    font-size: 24px; /* Palakihin ang laki */
-    cursor: pointer; /* Para clickable */
-  }
+    gap: 15px;
+}
+
+.burger-icon, .profile-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
