@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-container p {
+    font-size: 38px;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 2px;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.logo-container p:hover {
+    color: #b88e2f;
+}
+
+/* Navigation Icons */
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* ✅ Larger, Elegant Icons */
+.burger-icon, .profile-icon {
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.burger-icon:hover, .profile-icon:hover {
+    transform: scale(1.1);
+    color: #b88e2f;
+}
+
+/* ✅ Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: white;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    padding: 10px 15px;
+    transition: 0.3s;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #b88e2f;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #b88e2f;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transition: 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Editorial Section */
+.editorial-section {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.editorial-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.editorial-title {
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+.editorial-description {
+    font-size: 1.3em;
+    color: #555;
+    max-width: 80%;
+    margin: 15px auto;
+    line-height: 1.7;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.footer-logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.footer-description {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.footer-line {
+    width: 80%;
+    margin: 15px auto;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ✅ Responsive Design */
+@media screen and (max-width: 768px) {
+    .burger-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+        padding: 15px;
+    }
+
+    nav ul.menu-active {
+        display: flex;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S + C EDITORIAL</title>
+
+  <!-- Link to Custom CSS -->
+  <link rel="stylesheet" href="editorial.css">
+
+  <!-- Google Font (Poppins) for a luxury feel -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome for Icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div class="header">
+    <div class="logo-container">
+      <a href="S+C_MAIN.html" style="text-decoration: none;">
+        <p>S + C</p>
+      </a>
+    </div>
+    <div class="nav-icons">
+      <div class="burger-icon"><i class="fas fa-bars"></i></div>
+      <div class="profile-icon"><i class="fas fa-user"></i></div>
+    </div>
+  </div>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul class="nav-menu" id="nav-links">
+      <li><a href="S+C_FASHION.html">Fashion Design</a></li>
+      <li><a href="S+C_DCJ.html">Dress, Clothes & Jeans</a></li>
+      <li><a href="S+C_SHOESBAG.html">Shoes & Bags</a></li>
+      <li><a href="S+C_STYLEFASHIONG.html">Style & Fashion Gallery</a></li>
+      <li><a href="S+C_TIPSTRICKS.html">Tips & Tricks</a></li>
+      <li><a href="S+C_NEWSALERT.html">News & Fashion Alerts</a></li>
+      <li><a href="S+C_ACCESSORIES.html">Accessories</a></li>
+      <li><a href="editorial.html">Editorial</a></li>
+      <li><a href="S+C_DESIGNERS.html">Designers</a></li>
+    </ul>
+  </nav>
+
+  <!-- Editorial Section -->
+  <section class="editorial-section">
+    <div class="editorial-image">
+      <img src="SC_Images/edi.jpg" alt="Fashion Editorial">
+    </div>
+    <h1 class="editorial-title">THE FUTURE OF FASHION: WHAT'S NEXT?</h1>
+    <p class="editorial-description">
+      As we step into 2025, fashion is evolving faster than ever. The rise of sustainable materials, AI-driven designs, and futuristic metallic fabrics 
+      are redefining the industry. From eco-friendly couture to high-tech wearables, the next era of fashion is all about innovation and self-expression.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-logo">S + C</p>
+    <p class="footer-description">Welcome to S + C - Your own style starts here!</p>
+    <hr class="footer-line">
+    <p>&copy; 2025 S + C | All rights reserved.</p>
+  </footer>
+
+  <!-- ✅ JavaScript for Burger Menu (Improved) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const burgerIcon = document.querySelector(".burger-icon");
+      const navMenu = document.querySelector("nav ul");
+
+      function updateUI() {
+        if (window.innerWidth >= 1024) {
+          burgerIcon.style.display = "none";
+          navMenu.style.display = "flex";
+        } else {
+          burgerIcon.style.display = "block";
+          navMenu.style.display = "none";
+        }
+      }
+
+      burgerIcon.addEventListener("click", () => {
+        navMenu.classList.toggle("menu-active");
+        navMenu.style.display = navMenu.classList.contains("menu-active") ? "flex" : "none";
+      });
+
+      window.addEventListener("resize", updateUI);
+      updateUI();
+    });
+  </script>
+
+</body>
+</html>
